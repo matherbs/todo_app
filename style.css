@@ -27,10 +27,15 @@ li {
   font-size: 60px;
 }
 
-.main-header img {
+.main-header svg {
   float: right;
   margin: 45px 100px 0px 0px;
+  padding: 0;
   width: 60px;
+}
+
+.main-header svg:hover path {
+  fill: #008000;
 }
   /*<!-- MAIN-HEADER END -->*/
 
@@ -49,7 +54,6 @@ li {
 }
 
 .list-item {
-  margin: 0;
 }
 
 .item-header {
@@ -64,6 +68,10 @@ li {
   font-size: 40px;
 }
 
+.item-title:hover {
+  color : black;
+}
+
 .menu {
   margin: 0px 50px 0px 0px;
   height: 100px;
@@ -76,12 +84,16 @@ li {
   font-size: 20px;
 }
 
-#delete {
-  color            : #800000;
+.delete {
+  color : #800000;
 }
 
-#edit {
-  color            : #008000;
+.edit {
+  color : #008000;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
 }
 
 .item-container {
@@ -125,6 +137,10 @@ li {
 
 .main-footer span {
   margin-left: 20px;
+}
+
+.main-footer span:hover {
+  text-decoration: underline;
 }
   /*<!-- MAIN-FOOTER END -->*/
 
