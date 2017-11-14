@@ -227,9 +227,11 @@ input {
   /*<!-- ADD DESCRIPTION END -->*/
 
   /*<!-- START TIME START -->*/
-  /*<!-- START TIME END-->*/
-
   /*<!-- END TIME START -->*/
+  #start-at, #end-at {
+    margin-left: 50px;
+  }
+  /*<!-- START TIME END-->*/
   /*<!-- END TIME END -->*/
 
   /*<!-- NEXT.CONTAINER END -->*/

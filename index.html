@@ -5,12 +5,14 @@
 
     <meta charset="utf-8">
     <title>Todo_app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
+    <!-- DATE PICKER -->
+    <link rel="stylesheet" href="datepicker/dist/mtr-datepicker.min.css">
+    <link rel="stylesheet" href="datepicker/dist/mtr-datepicker.clutterboard-theme.min.css">
   </head>
 
   <body>
@@ -309,6 +311,7 @@
           <!-- START TIME START -->
           <section class="next-start">
             <h2 class="add-title">START AT</h2>
+            <div id="start-at"></div>
             <hr class="next-hr">
           </section>
           <!-- START TIME END-->
@@ -316,6 +319,7 @@
           <!-- END TIME START -->
           <section class="next-end">
             <h2 class="add-title">END AT</h2>
+            <div id="end-at"></div>
             <hr class="next-hr">
           </section>
           <!-- END TIME END -->
@@ -331,6 +335,9 @@
 
     </div>
     <!-- MAIN END -->
+    <script type="text/javascript" src="datepicker/dist/mtr-datepicker.min.js"></script>
+    <script type="text/javascript" src="datepicker.js">
 
+    </script>
   </body>
 </html>
