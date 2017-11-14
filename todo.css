@@ -67,7 +67,10 @@ input {
 }
 
 #main-header-right button {
+  width: 29px;
+  height: 29px;
   padding: 0;
+  margin-top: 15px;
   background-color: white;
 }
 
