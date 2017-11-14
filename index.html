@@ -9,7 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   </head>
 
@@ -20,343 +20,306 @@
 
       <!-- MAIN-HEADER START -->
       <div class="main-header">
+        <section id="main-header-left">
         <h1>MY TODOLIST</h1>
-        <button type="button" class="add" name="Add">  <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1"
-            id="Capa_1"
-            x="0px"
-            y="0px"
-            viewBox="0 0 31.059 31.059"
-            style="enable-background:new 0 0 31.059 31.059;"
-            xml:space="preserve"
-            width="60px"
-            height="60px">
-            <g>
+        </section>
+
+        <section id="main-header-right">
+          <button type="button" class="add" name="Add"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 31.059 31.059"
+              style="enable-background:new 0 0 31.059 31.059;"
+              xml:space="preserve"
+              width="60px"
+              height="60px">
               <g>
-                <path
-                  d="M15.529,31.059C6.966,31.059,0,24.092,0,15.529C0,6.966,6.966,0,15.529,0    c8.563,0,15.529,6.966,15.529,15.529C31.059,24.092,24.092,31.059,15.529,31.059z M15.529,1.774    c-7.585,0-13.755,6.171-13.755,13.755s6.17,13.754,13.755,13.754c7.584,0,13.754-6.17,13.754-13.754S23.113,1.774,15.529,1.774z"
-                  fill="#a3a3a3"/>
+                <g>
+                  <path
+                    d="M15.529,31.059C6.966,31.059,0,24.092,0,15.529C0,6.966,6.966,0,15.529,0    c8.563,0,15.529,6.966,15.529,15.529C31.059,24.092,24.092,31.059,15.529,31.059z M15.529,1.774    c-7.585,0-13.755,6.171-13.755,13.755s6.17,13.754,13.755,13.754c7.584,0,13.754-6.17,13.754-13.754S23.113,1.774,15.529,1.774z"
+                    fill="#a3a3a3"/>
+                </g>
+                <g>
+                  <path d="M21.652,16.416H9.406c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.397-0.888,0.888-0.888h12.246    c0.49,0,0.887,0.398,0.887,0.888C22.539,16.02,22.143,16.416,21.652,16.416z" fill="#a3a3a3"/>
+                </g>
+                <g>
+                  <path d="M15.529,22.539c-0.49,0-0.888-0.397-0.888-0.887V9.406c0-0.49,0.398-0.888,0.888-0.888    c0.49,0,0.887,0.398,0.887,0.888v12.246C16.416,22.143,16.02,22.539,15.529,22.539z" fill="#a3a3a3"/>
+                </g>
               </g>
-              <g>
-                <path d="M21.652,16.416H9.406c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.397-0.888,0.888-0.888h12.246    c0.49,0,0.887,0.398,0.887,0.888C22.539,16.02,22.143,16.416,21.652,16.416z" fill="#a3a3a3"/>
-              </g>
-              <g>
-                <path d="M15.529,22.539c-0.49,0-0.888-0.397-0.888-0.887V9.406c0-0.49,0.398-0.888,0.888-0.888    c0.49,0,0.887,0.398,0.887,0.888v12.246C16.416,22.143,16.02,22.539,15.529,22.539z" fill="#a3a3a3"/>
-              </g>
-            </g>
-          </svg></button>
+            </svg></button>
+        </section>
       </div>
       <!-- MAIN-HEADER END -->
 
       <!-- MAIN.CONTAINER START -->
       <div class="main-container">
-        <ul class="list" id="todo-list">
+            <ul class="list" id="todo-list">
 
-          <li class="list-item">
+              <li class="list-item">
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-          </li>
+              <li class="list-item">
 
-          <li class="list-item">
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+              <li class="list-item">
 
-          </li>
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-          <li class="list-item">
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+              <li class="list-item">
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-          </li>
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-          <li class="list-item">
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+              <li class="list-item">
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-          </li>
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-          <li class="list-item">
+              <li class="list-item">
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-          </li>
+              <li class="list-item">
 
-          <li class="list-item">
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
+              <li class="list-item">
 
-          </li>
+                <!-- LI HEADER START -->
+                <header class="item-header">
+                  <h2 class="item-title"><span class="border"></span>My title</h2>
+                  <ul class="menu">
+                    <li class="menu-item"><button type="button" name="Done" class="menu-item-done">Done</button></li>
+                    <li class="menu-item"><button type="button" name="Edit" class="menu-item-edit">Edit</button></li>
+                    <li class="menu-item"><button type="button" name="Delete" class="menu-item-delete">Delete</button></li>
+                  </ul>
+                </header>
+                <!-- LI HEADER END -->
 
-          <li class="list-item">
+                <!-- LI MAIN START -->
+                <div class="item-container">
+                  <p>My description</p>
+                </div>
+                <!-- LI MAIN END -->
 
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
+                <!-- LI FOOTER START -->
+                <footer class="item-footer">
+                  <span>Start at...</span>
+                  <span>End at...</span>
+                </footer>
+                <hr class="hr-item-footer">
+              <!-- LI FOOTER END -->
 
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
-
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
-
-          </li>
-
-          <li class="list-item">
-
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
-
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
-
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
-
-          </li>
-
-          <li class="list-item">
-
-            <!-- LI HEADER START -->
-            <header class="item-header">
-              <h2 class="item-title"><span class="border"></span>My title</h2>
-              <ul class="menu">
-                <li><button type="button" name="Done" class="menu-item done">Done</button></li>
-                <li><button type="button" name="Edit" class="menu-item edit">Edit</button></li>
-                <li><button type="button" name="Delete" class="menu-item delete">Delete</button></li>
-              </ul>
-            </header>
-            <!-- LI HEADER END -->
-
-            <!-- LI MAIN START -->
-            <div class="item-container">
-              <p>My description</p>
-            </div>
-            <!-- LI MAIN END -->
-
-            <!-- LI FOOTER START -->
-            <footer class="item-footer">
-              <span>Start at...</span>
-              <span>End at...</span>
-            </footer>
-            <hr class="hr-item-footer">
-            <!-- LI FOOTER END -->
-
-          </li>
-        </ul>
-
-        <!-- MAIN-FOOTER START -->
-        <div class="main-footer">
-          <p id="show"> Show: <span id="all">All task</span> <span id="todo">Todo task</span> <span id="done">Done task</span> </p>
-        </div>
-        <!-- MAIN-FOOTER END -->
+            </ul>
 
       </div>
+
+      <!-- MAIN-FOOTER START -->
+      <div class="main-footer">
+        <p id="show"> Show: <span id="all">All task</span> <span id="todo">Todo task</span> <span id="done">Done task</span> </p>
+      </div>
+      <!-- MAIN-FOOTER END -->
+
       <!-- MAIN.CONTAINER END -->
 
       <!-- NEXT.CONTAINER START -->
       <div class="next-container">
+        <section class="next-main-container">
+          <!-- ADD TITLE START -->
+          <section class="next-title">
+            <h2 class="add-title">TITLE</h2>
+            <input type="text" name="add title" value="Insert a title">
+            <hr class="next-hr">
+          </section>
+          <!-- ADD TITLE END -->
 
-        <!-- ADD TITLE START -->
-        <section class="next-title">
-          <h2 class="add-title">TITLE</h2>
-          <input type="text" name="add title" value="Insert a title">
-          <hr class="next-hr">
-        </section>
-        <!-- ADD TITLE END -->
+          <!-- ADD DESCRIPTION START -->
+          <section class="next-description">
+            <h2 class="add-title">DESCRIPTION</h2>
+            <input type="text" name="add description" value=" Add a description">
+            <hr class="next-hr">
+          </section>
+          <!-- ADD DESCRIPTION END -->
 
-        <!-- ADD DESCRIPTION START -->
-        <section class="next-description">
-          <h2 class="add-title">DESCRIPTION</h2>
-          <input type="text" name="add description" value=" Add a description">
-          <hr class="next-hr">
-        </section>
-        <!-- ADD DESCRIPTION END -->
+          <!-- START TIME START -->
+          <section class="next-start">
+            <h2 class="add-title">START AT</h2>
+            <hr class="next-hr">
+          </section>
+          <!-- START TIME END-->
 
-        <!-- START TIME START -->
-        <section class="next-start">
-          <h2 class="add-title">START AT</h2>
-          <hr class="next-hr">
+          <!-- END TIME START -->
+          <section class="next-end">
+            <h2 class="add-title">END AT</h2>
+            <hr class="next-hr">
+          </section>
+          <!-- END TIME END -->
         </section>
-        <!-- START TIME END-->
-
-        <!-- END TIME START -->
-        <section class="next-end">
-          <h2 class="add-title">END AT</h2>
-          <hr class="next-hr">
-        </section>
-        <!-- END TIME END -->
       </div>
       <!-- NEXT.CONTAINER END -->
 
