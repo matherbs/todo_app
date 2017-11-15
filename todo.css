@@ -17,6 +17,10 @@ input {
   color: #a3a3a3
 }
 
+:focus {
+    outline: none;
+}
+
   /*<!-- MAIN START -->*/
 
 .main-header {
@@ -45,28 +49,29 @@ input {
   border-top: 1px solid #a3a3a3;
 }
 
-.next-container-show {
-  visibility: hidden;
+.hide{
+  display: none;
 }
 
   /*<!-- MAIN-HEADER START -->*/
-#main-header-left {
+.main-header-left {
   float: left;
 }
 
-#main-header-left h1 {
+.main-header-left h1 {
   font-size: 25px;
   margin-top: 30px;
   margin-bottom: 0
 }
 
-#main-header-right {
-  width: 40p;
+/*BUTTON ADD START*/
+
+.main-header-right {
   float: right;
   margin-top: 15px;
 }
 
-#main-header-right button {
+.main-header-right button {
   width: 29px;
   height: 29px;
   padding: 0;
@@ -74,7 +79,7 @@ input {
   background-color: white;
 }
 
-.main-header svg:hover path {
+.main-header-right svg:hover path {
   fill: #008000;
 }
 
@@ -84,6 +89,34 @@ input {
   height: 60px;
   border: none;
 }
+/*BUTTON ADD END*/
+/*BUTTON CLOSE START*/
+
+.main-header-right-rotate {
+  float: right;
+  margin-top: 15px;
+}
+
+.main-header-right-rotate button {
+  transform: rotate(45deg);
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.main-header-right-rotate svg:hover path {
+  fill: #800000;
+}
+
+.add {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+/*BUTTON CLOSE END*/
   /*<!-- MAIN-HEADER END -->*/
 
   /*<!-- MAIN.CONTAINER START -->*/
@@ -95,7 +128,16 @@ input {
 }
 
 .list-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.list-item::after {
+  content: " ";
+  position: absolute;
+  height: 1px;
+  background-color: #a3a3a3;
+  left:70px;
+  right: 70px;
 }
 
 .item-header {
@@ -208,20 +250,14 @@ input {
 }
 
 .add-title {
-  font-size: 15px;
+  font-size: 20px;
   margin: 20px 0px 0px 40px;
 }
 
 .next-main-container input {
-  font-size: 12px;
+  font-size: 15px;
   margin: 10px 0px 0px 55px;
 }
-
-  /*<!-- ADD TITLE START -->*/
-  /*<!-- ADD TITLE END -->*/
-
-  /*<!-- ADD DESCRIPTION START -->*/
-  /*<!-- ADD DESCRIPTION END -->*/
 
   /*<!-- START TIME START -->*/
   /*<!-- END TIME START -->*/
@@ -248,5 +284,16 @@ input {
     text-decoration: underline;
   }
   /*<!-- NEXT-FOOTER END -->*/
+
+        /*HR AFTER*/
+  .next-after::after {
+    content: " ";
+    position: absolute;
+    left: 70px;
+    right: 70px;
+    height: 1px;
+    margin-top: 5px;
+    background-color: #a3a3a3;
+  }
 
   /*<!-- MAIN END -->*/
