@@ -259,6 +259,11 @@ input {
   margin: 10px 0px 0px 55px;
 }
 
+.input {
+  width: 80%;
+  height: auto;
+}
+
   /*<!-- START TIME START -->*/
   /*<!-- END TIME START -->*/
   #start-at, #end-at {
