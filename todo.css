@@ -242,6 +242,19 @@ input {
   margin: 0;
 }
 
+.clear-button {
+  position: absolute;
+  right: 50px;
+}
+
+#clear-button {
+color: #800000;
+}
+
+#clear-button:hover {
+text-decoration: underline;
+}
+
 .next-hr {
  position: absolute;
  height: 1px solid #a3a3a3;

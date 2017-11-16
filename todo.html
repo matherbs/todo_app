@@ -295,18 +295,26 @@
       <div id="next-container-show" class="hide">
 
         <div class="next-container next-after">
+
           <section class="next-main-container">
+
+              <!-- CLEAR START -->
+            <section class="clear-button">
+              <button type="button" id="clear-button"  onclick="clearButton()" name="button">Clear</button>
+            </section>
+              <!-- CLEAR END -->
+
             <!-- ADD TITLE START -->
             <section class="next-title next-after">
               <h2 class="add-title">TITLE</h2>
-              <section><input type="text" class="input" name="add title" value="Insert a title"></section>
+              <section><input type="text" class="input" id="input-title" name="add title" onfocus="this.value=''" value="Insert a title"></section>
             </section>
             <!-- ADD TITLE END -->
 
             <!-- ADD DESCRIPTION START -->
             <section class="next-description next-after">
               <h2 class="add-title">DESCRIPTION</h2>
-              <section><input type="text" class="input" name="add description" value="Add a description"></section>
+              <section><input type="text" class="input" id="input-description" name="add description" onfocus="this.value=''" value="Add a description"></section>
             </section>
             <!-- ADD DESCRIPTION END -->
 
